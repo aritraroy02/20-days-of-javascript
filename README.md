@@ -5,4 +5,14 @@
 Day 01-[Output](https://aritraroy02.github.io/20-days-of-javascript/Day-01/)
 <br />
 Day 02-[Output](https://aritraroy02.github.io/20-days-of-javascript/Day-02/)
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+<br />
+Day 03-[Output](https://aritraroy02.github.io/20-days-of-javascript/Day-03/)
+<br />
+Day 04-[Output](https://aritraroy02.github.io/20-days-of-javascript/Day-04/)
+<br />
+Day 05-[Output](https://aritraroy02.github.io/20-days-of-javascript/Day-05/)
+<br />
+Day 06-[Output](https://aritraroy02.github.io/20-days-of-javascript/Day-06/)
+<br />
+Day 07-[Output](https://aritraroy02.github.io/20-days-of-javascript/Day-07/)
+<br />

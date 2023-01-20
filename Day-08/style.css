@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(247, 233, 177);
+}
+#table1{
+    font-family: Arial;
+    background-color: brown;
+    width: 500px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#create {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.fixed {
+	
+	width: 500px;
+	bottom: 10px;
+	color: rgb(78, 7, 184);
+    text-align:end;
+    margin-left: auto;
+    margin-right: auto;
+} 
+  

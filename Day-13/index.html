@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Child labour</title>
+    <link rel="icon" href="img/stopSign.png" type="image/png" sizes="16x16">
+</head>
+<body>
+    <canvas id="poster" width="336" height="476"></canvas>
+
+    <script>
+        var canvas = document.getElementById("poster");
+        canvas.style.position = "absolute";
+        canvas.style.left = "50%";
+        canvas.style.top = "50%";
+        canvas.style.transform = "translate(-50%, -50%)";
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "#737373";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        var img1 = new Image();
+        img1.src = "img/child1.png";
+        img1.onload = function(){
+            ctx.save();
+            ctx.shadowOffsetX = 9;
+            ctx.shadowOffsetY = 1;
+            ctx.shadowBlur = 5;
+            ctx.shadowColor = "#404040";
+            ctx.drawImage(img1,0,0,canvas.width,canvas.height);
+            ctx.restore();
+
+            var img2 = new Image();
+            img2.src = "img/child2.png";
+            img2.onload = function(){
+                ctx.save();
+                ctx.shadowOffsetX = 9;
+                ctx.shadowOffsetY = 1;
+                ctx.shadowBlur = 5;
+                ctx.shadowColor = "#404040";
+                ctx.drawImage(img2,0,0,canvas.width,canvas.height);
+                ctx.restore();
+
+                ctx.fillStyle = "#683a2c";
+                ctx.fillRect(0, canvas.height-36, canvas.width, 100);
+
+                ctx.fillStyle = "white";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                var text = "JOINT INITATIVE BY DEEP FOUNDATION AND TEAM ARISH,";
+                var text2 = "VIT BHOPAL";
+                ctx.font = "10px Arial";
+                ctx.fillText(text, canvas.width/2, canvas.height-25);
+                ctx.fillText(text2, canvas.width/2, canvas.height-12);
+                
+                ctx.fillStyle = "white";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "top";
+                ctx.font = "30px Arial";
+                var textArray = ["Yes", "to", "Education", "No", "to", "Child", "Labours"];
+                ctx.shadowOffsetX = 1.25;
+                ctx.shadowOffsetY = 1;
+                ctx.shadowBlur = 1.5;
+                ctx.shadowColor = "white";
+                ctx.globalAlpha = 0.75;
+                for(var i=0; i<textArray.length; i++) {
+                    ctx.fillText(textArray[i], canvas.width/2 - 25, canvas.height/2 + (i*40) - 165);
+                }
+                ctx.globalAlpha = 1;
+            }
+        }
+
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    </script>
+
+</body>
+</html>
